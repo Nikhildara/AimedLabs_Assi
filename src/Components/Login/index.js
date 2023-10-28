@@ -26,6 +26,7 @@ class Login extends Component {
     console.log(this.username, this.password);
     if (this.state.username !== '' && this.state.password !== '') {
       console.log('In Sumbit1');
+      this.setState({ showErr: false });
       // to API
     } else {
       console.log('In Sumbit 2');

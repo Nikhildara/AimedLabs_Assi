@@ -1,18 +1,5 @@
 import Styled from 'styled-components';
 
-export const Label = Styled.label`
-font-size: 14px;
-font-weight: 500;
-color: #94a3b8;
-`;
-
-export const Input = Styled.input`
-border: 1px solid rgba(112, 20, 247, 0.2);
-outline:none;
-border-radius: 5px;
-padding: 10px 10px;
-`;
-
 export const LoginCon = Styled.div`
 background-color: #f9f9f9;
 height: 100vh;
@@ -33,10 +20,25 @@ align-items: center;
 gap: 15px;
 padding: 30px 5px;
 max-width: 380px;
+height:45vh;
+@media (min-width:768px){
+    max-width: 450px;
+}
+@media (min-width:1200px){
+    max-width: 550px;
+    height:50vh;
+}
 `;
 
 export const Logo = Styled.img`
-  width:162px
+  width:162px;
+  @media (min-width:768px){
+    width:220px
+  }
+  @media (min-width:1200px){
+    width: 280px;
+}
+
 `;
 
 export const Form = Styled.form`
@@ -45,7 +47,25 @@ display: flex;
 flex-direction: column;
 align-items: center;
 gap: 15px;
+@media (min-width:768px){
+    gap: 20px;
+}
 `;
+
+export const Label = Styled.label`
+font-size: 14px;
+font-weight: 500;
+color: #94a3b8;
+`;
+
+export const Input = Styled.input`
+border: 1px solid rgba(112, 20, 247, 0.2);
+outline:none;
+border-radius: 5px;
+padding: 10px 10px;
+`;
+
+
 
 export const InputCon = Styled.div`
 display: flex;
